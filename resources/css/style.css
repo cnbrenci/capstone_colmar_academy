@@ -1,0 +1,128 @@
+:root {
+    --light: #e8e8e8;
+    --dark: #3b3b3b;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    height: 64px;
+    padding-right: 24px;
+    padding-left: 24px;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    line-height: 32px;
+    font-size: 24px;
+    color: var(--dark);
+}
+
+.logo .logo-academy {
+    font-weight: normal;
+    opacity: .5;
+}
+
+section#hero {
+    background-color: var(--light);
+    display: flex;
+    align-items: center;
+}
+
+section#info {
+    display: flex;
+}
+
+.hero-image {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.hero-text {
+    width: 30%;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.text-content {
+    color: var(--dark);
+}
+
+.info-items {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 40%;
+    padding-top: 16px;
+    border-left: var(--light) solid 1px;
+}
+
+.info-item {
+    display: flex;
+    border-bottom: var(--light) solid 1px;
+}
+
+.info-item:hover {
+   background-color: var(--light); 
+}
+
+.info-item img {
+    width: 35%;
+    padding: 16px;
+}
+
+.info-item-text {
+    width: 65%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.info-item-text h3 {
+    margin: 0;
+}
+
+.info-item-text p {
+    margin: .6em 0;
+}
+
+a.button {
+    background-color: var(--dark);
+    color: var(--light);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    display: block;
+    text-align: center;
+}
+
+a.button:hover{
+    opacity: .90;
+}
