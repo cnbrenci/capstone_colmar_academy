@@ -1,6 +1,6 @@
 :root {
     --light: #e8e8e8;
-    --dark: #3b3b3b;
+    --dark: #424242;
 }
 
 * {
@@ -10,10 +10,11 @@
     box-sizing: border-box;
 }
 
+/* header */
+
 header {
     height: 64px;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding: 0 24px;
     position: relative;
     display: flex;
     flex-flow: row;
@@ -49,14 +50,16 @@ nav a {
     opacity: .5;
 }
 
+.logo img {
+    height: 50px;
+}
+
+/* hero section */
+
 section#hero {
     background-color: var(--light);
     display: flex;
     align-items: center;
-}
-
-section#info {
-    display: flex;
 }
 
 .hero-image {
@@ -72,8 +75,10 @@ section#info {
     width: 100%;
 }
 
-.text-content {
-    color: var(--dark);
+/* info section */
+
+section#info {
+    display: flex;
 }
 
 .info-items {
@@ -104,6 +109,7 @@ section#info {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    max-width: 250px;
 }
 
 .info-item-text h3 {
@@ -112,6 +118,31 @@ section#info {
 
 .info-item-text p {
     margin: .6em 0;
+}
+
+/* course section */
+
+section#course {
+    background-color: var(--light);
+}
+
+.course-gallery {
+    display: flex;
+}
+
+.course-gallery figure {
+    background-color: white;
+}
+
+.course-gallery figcaption {
+    padding: 16px;
+}
+
+/* common */
+
+.centered-header {
+    text-align: center;
+    padding: 32px;
 }
 
 a.button {
@@ -125,4 +156,8 @@ a.button {
 
 a.button:hover{
     opacity: .90;
+}
+
+h1,h2,h3,h4,h5,p,figcaption {
+    color: var(--dark);
 }
