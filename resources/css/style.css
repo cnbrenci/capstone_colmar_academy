@@ -14,7 +14,7 @@
 
 header {
     height: 64px;
-    padding: 0 24px;
+    padding: 0 1.5rem;
     position: relative;
     display: flex;
     flex-flow: row;
@@ -33,15 +33,15 @@ nav a {
     text-decoration: none;
     color: black;
     font-size: 1rem;
-    padding: 8px;
+    padding: .5rem;
 }
 
 .logo {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    line-height: 32px;
-    font-size: 24px;
+    line-height: 2rem;
+    font-size: 1.5rem;
     color: var(--dark);
 }
 
@@ -57,79 +57,26 @@ nav a {
 /* hero section */
 
 section#hero {
-    background-color: var(--light);
     display: flex;
     align-items: center;
 }
 
-.hero-image {
+img.hero-image {
     width: 60%;
-    padding: 32px 24px;
+    padding: 2rem 1.5rem;
 }
 
 .hero-text {
     width: 30%;
 }
 
-.hero-image img {
-    width: 100%;
-}
-
-/* info section */
-
-section#info {
-    display: flex;
-}
-
-.info-items {
-    display: flex;
-    flex-flow: column;
-    align-items: start;
-    width: 40%;
-    padding-top: 16px;
-    border-left: var(--light) solid 1px;
-}
-
-.info-item {
-    display: flex;
-    border-bottom: var(--light) solid 1px;
-}
-
-.info-item:hover {
-   background-color: var(--light); 
-}
-
-.info-item img {
-    width: 35%;
-    padding: 16px;
-}
-
-.info-item-text {
-    width: 65%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    max-width: 250px;
-}
-
-.info-item-text h3 {
-    margin: 0;
-}
-
-.info-item-text p {
-    margin: .6em 0;
-}
-
 /* course section */
-
-section#course {
-    background-color: var(--light);
-}
 
 .course-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1rem;
 }
 
 .course-gallery figure {
@@ -145,19 +92,79 @@ section#course {
     padding: 16px;
 }
 
-/* common */
+/******** common ********/
 
 .centered-header {
     text-align: center;
-    padding: 32px 0 16px 0;
+    padding: 2rem 0 0 0;
     margin: 0;
 }
+
+.container-sxs {
+    display: flex;
+}
+
+.section-grey {
+    background-color: var(--light);
+}
+
+.container-60 {
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.container-60 img,video {
+    width: 100%;
+}
+
+.container-40 {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    width: 40%;
+    padding-top: 1rem;
+    border-left: var(--light) solid 1px;
+}
+
+/* h8l card */
+
+.h8l-card {
+    display: flex;
+    border-bottom: var(--light) solid 1px;
+}
+
+.h8l-card:hover {
+   background-color: var(--light); 
+}
+
+.h8l-card img {
+    width: 35%;
+    padding: 1rem;
+}
+
+.h8l-card-text {
+    width: 65%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    max-width: 250px;
+}
+
+.h8l-card-text h3 {
+    margin: 0;
+}
+
+.h8l-card-text p {
+    margin: .6rem 0;
+}
+
+/* button */
 
 a.button {
     background-color: var(--dark);
     color: var(--light);
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     display: block;
     text-align: center;
 }
@@ -165,6 +172,8 @@ a.button {
 a.button:hover{
     opacity: .90;
 }
+
+/* text */
 
 h1,h2,h3,h4,h5,p,figcaption {
     color: var(--dark);
