@@ -128,10 +128,17 @@ section#course {
 
 .course-gallery {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .course-gallery figure {
     background-color: white;
+    width: 25%;
+}
+
+.course-gallery figure img {
+    width: 100%
 }
 
 .course-gallery figcaption {
@@ -142,7 +149,8 @@ section#course {
 
 .centered-header {
     text-align: center;
-    padding: 32px;
+    padding: 32px 0;
+    margin: 0;
 }
 
 a.button {
