@@ -84,7 +84,7 @@ section#info {
 .info-items {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: start;
     width: 40%;
     padding-top: 16px;
     border-left: var(--light) solid 1px;
@@ -149,7 +149,7 @@ section#course {
 
 .centered-header {
     text-align: center;
-    padding: 32px 0;
+    padding: 32px 0 16px 0;
     margin: 0;
 }
 
