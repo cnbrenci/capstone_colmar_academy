@@ -93,6 +93,11 @@ img.hero-image {
     padding: 16px;
 }
 
+/* course section */
+#thesis .container-40 {
+    border-left:  0px;
+}
+
 /******** common ********/
 
 .centered-header {
@@ -176,6 +181,15 @@ a.button:hover{
 
 /* text */
 
-h1,h2,h3,h4,h5,p,figcaption {
+h1,h2,h3,h4,h5,p,figcaption,footer,a {
     color: var(--dark);
+}
+
+/* footer */
+
+footer {
+    border-top: var(--light) solid 1px;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
 }
